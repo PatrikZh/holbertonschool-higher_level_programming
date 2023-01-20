@@ -2,12 +2,12 @@
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     from sys import argv
-
+value = len(argv) - 1
 for i in range(len(argv)):
     if i != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    elif argv[i] == 3:
+    elif value:
         print("{} + {} = {}".format(a, b, add(a, b)))
         print("{} - {} = {}".format(a, b, sub(a, b)))
         print("{} * {} = {}".format(a, b, mul(a, b)))
