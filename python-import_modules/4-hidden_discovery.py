@@ -4,4 +4,4 @@ if __name__ == "__main__":
     enter = dir(hidden_4)
     for i in enter:
         if "__" not in i:
-            print("{}".format(enter))
+            print("{}".format(i))
