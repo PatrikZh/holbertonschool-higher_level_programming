@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
             total += num
     return total
 
-# You can also do it another way and faster mehtod: return sum(set(my_list) -> which finds the sum of the set list of my_list
+# You can also do it another way and faster method: return sum(set(my_list) -> which finds the sum of the set list of my_list
