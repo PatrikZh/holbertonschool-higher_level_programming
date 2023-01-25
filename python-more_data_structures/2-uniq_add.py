@@ -7,3 +7,5 @@ def uniq_add(my_list=[]):
             seen.add(num)
             total += num
     return total
+
+# You can also do it another way and faster mehtod: return sum(set(my_list) -> which finds the sum of the set list of my_list
