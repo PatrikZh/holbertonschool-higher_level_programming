@@ -7,3 +7,6 @@ def search_replace(my_list, search, replace):
         else:
             new_list.append(element)
     return new_list
+
+# [replace if element == search else element for element in my_list] -> list compehersion/another way to do it
+
