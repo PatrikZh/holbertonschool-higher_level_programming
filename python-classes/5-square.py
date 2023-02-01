@@ -10,8 +10,8 @@ class Square:
         else:
             raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError("size must be >= 0") 
-        self.__size = size 
+            raise ValueError("size must be >= 0")
+        self.__size = size
     ''' getting the size'''
     @property
     def size(self):
@@ -26,10 +26,10 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    ''' method to indicate area''' 
+    ''' method to indicate area'''
     def area(self):
         return self.__size ** 2
-    ''' '''
+    ''' Printing square with #'s'''
     def my_print(self):
         for my_square in range(self.__size):
             for i in range(self.__size):
@@ -37,5 +37,3 @@ class Square:
             print()
         if self.__size == 0:
             print()
-
-        
