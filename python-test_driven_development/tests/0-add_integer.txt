@@ -1,0 +1,22 @@
+Module 0-add_integer
+
+def add_integer(a, b=98) defines addition of 2 integers
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+function that returns sum of positive a, b
+
+	>>> add_integer(4, 8)
+	12
+
+function that returns sum of negative a, b
+
+	>>> add_integer(-3, -6)
+	-9
+	>>> add_integer(-5, -5)
+	-10
+
+If b is missing, the default value is 98
+
+	>>> add_integer(5)
+	103
