@@ -1,0 +1,31 @@
+Module 3-say_my_name
+
+def say_my_name(first_name, last_name="") Prints the 2 arguments as strings
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Function that sees the two arguments as being strings
+
+	>>> say_my_name(1, "Python")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+Function that sees the two arguments as being strings
+
+        >>> say_my_name('Python', 3)
+        Traceback (most recent call last):
+        TypeError: last_name must be a string
+
+Function that is going only to print the first name
+
+	>>> say_my_name('python')
+	My name is python 
+
+Function that will print first and last name
+
+	>>> say_my_name('Monty', 'Python')
+	My name is Monty Python
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
