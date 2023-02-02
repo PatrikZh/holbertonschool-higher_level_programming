@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" Function that prints square with '#'"""
+
+
 def print_square(size):
+    ''' Conditions regarding type,length of size and loop for the square'''
     if type(size) != int:
         raise TypeError("size must be an integer")
     if size < 0:
