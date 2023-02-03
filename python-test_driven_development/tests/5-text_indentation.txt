@@ -18,15 +18,17 @@ Function that prints text
 	Come sta?
 	<BLANKLINE>
 	Come va?
+	<BLANKLINE>
 
 Function about lots of spaces
 
 	>>> text_indentation("Yo Ciao.    Come sta?   Come va?")
-	Yo ciao.
+	Yo Ciao.
 	<BLANKLINE>
 	Come sta?
 	<BLANKLINE>
 	Come va?
+	<BLANKLINE>
 
 Function that sees if is a missing argument
 
