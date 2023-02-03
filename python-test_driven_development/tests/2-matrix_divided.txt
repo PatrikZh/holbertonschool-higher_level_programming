@@ -39,6 +39,7 @@ Function that sees if the matrix is not a list of lists
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Function that sees if rows and size don't have the same length
+	
 	>>> matrix = [
 	...	[1, 2, 3, 7],
 	...	[4, 5, 6]
