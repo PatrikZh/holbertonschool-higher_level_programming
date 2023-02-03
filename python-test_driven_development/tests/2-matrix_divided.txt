@@ -56,6 +56,10 @@ Function that sees if div is not an integer/float
 	>>> print(matrix_divided(matrix, "hello"))
 	Traceback (most recent call last):
 	TypeError: div must be a number
+	
+	>>> print(matrix_divided(float('inf')))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
 
 	>>> matrix = [
 	...	[1, 2, 3],
@@ -66,6 +70,7 @@ Function that sees if div is not an integer/float
 	TypeError: div must be a number
 
 Function that sees if div can be 0
+
 	>>> matrix = [
 	...	[1, 2, 3],
 	...	[4, 5, 6]
@@ -73,3 +78,9 @@ Function that sees if div can be 0
 	>>> print(matrix_divided(matrix, 0))
 	Traceback (most recent call last):
 	ZeroDivisionError: division by zero
+
+Function if missing one argument or two
+
+	>>> print(matrix_divided()
+	Traceback (most recent call last):
+	TypeError: print(matrix_divided() missing required positional argument:
