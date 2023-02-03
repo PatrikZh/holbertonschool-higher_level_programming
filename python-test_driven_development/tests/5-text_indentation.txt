@@ -1,0 +1,35 @@
+Module 5-text_indentation(text)
+
+def text_indentation(text) Prints the given text while being formated
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Function that sees text type being a string
+
+	>>> text_indentation(2)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Function that prints text
+
+	>>> text_indentation("Yo ciao. Come sta? Come va?")
+	Yo ciao.
+	<BLANKLINE>
+	Come sta?
+	<BLANKLINE>
+	Come va?
+
+Function about lots of spaces
+
+	>>> text_indentation("Yo Ciao.    Come sta?   Come va?")
+	Yo ciao.
+	<BLANKLINE>
+	Come sta?
+	<BLANKLINE>
+	Come va?
+
+Function that sees if is a missing argument
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
