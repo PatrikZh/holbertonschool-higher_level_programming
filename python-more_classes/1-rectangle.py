@@ -8,19 +8,17 @@ class Rectangle:
         ''' Comment do be updated'''
         self.__width = width
         self.__height = height
-    
+
     @property
     def width(self):
-        ''' Comment do be updated'''
-       return self.__width
+        return self.__width
+
     @property
     def height(self):
-        ''' Comment do be updated'''
-       return self.__height
+        return self.__height
 
     @width.setter
     def width(self):
-        ''' Comment do be updated'''
         if type(width) != int:
             raise TypeError("width must be an integer")
         if width < 0:
@@ -29,7 +27,6 @@ class Rectangle:
 
     @height.setter
     def height(self):
-        ''' Comment do be updated'''
         if type(height) != int:
             raise TypeError("height must be an integer")
         if height < 0:
