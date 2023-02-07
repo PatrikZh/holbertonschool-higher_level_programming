@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" Comment do be updated"""
+""" Class that creates a rectangle"""
 
 
 class Rectangle:
-    ''' Comment do be updated'''
+    ''' __init__ function that constructs'''
     def __init__(self, width=0, height=0):
-        ''' Comment do be updated'''
+        ''' The usual build for __init__ function'''
         self.width = width
         self.height = height
 
