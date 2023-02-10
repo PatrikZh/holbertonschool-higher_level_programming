@@ -4,6 +4,4 @@
 
 def inherits_from(obj, a_class):
     ''' the first argument is child and second parent'''
-    if type(int) == 1:
-        return False
-    return issubclass(int, a_class)
+    return issubclass(int, a_class) and type(obj) != a_class
