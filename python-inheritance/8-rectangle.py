@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 
-""" Creates an class called BaseGeometry"""
+''' Creates an class called BaseGeometry'''
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-""" Creates an class called BaseGeometry"""
+
 class BaseGeometry:
     ''' Makes Empty class using pass function'''
     def __init__(self, width, height):
