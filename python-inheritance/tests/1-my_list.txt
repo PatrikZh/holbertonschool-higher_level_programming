@@ -18,6 +18,7 @@ No arguments
 	[]
 
 Includes arguments
+
 	>>> my_list = MyList([3, 1, 2])
 	>>> print(my_list)
 	[3, 1, 2]
@@ -44,11 +45,11 @@ Inherits methods from parent class
 Takes arguments as strings
 
 	>>> my_list = MyList()
-	>>> my_list.append("ok")
-	>>> my_list.append("hi")
-	>>> my_list.append("hello")
+	>>> my_list.append("yo")
+	>>> my_list.append("how")
+	>>> my_list.append("areu")
 	>>> my_list.print_sorted()
-	['hello', 'hi', 'ok']
+	['yo', 'how', 'areu']
 
 	>>> my_list = MyList([1, "hi", 5, "ok"])
 	>>> my_list.print_sorted()
