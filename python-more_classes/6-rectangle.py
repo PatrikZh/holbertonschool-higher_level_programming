@@ -5,6 +5,7 @@
 class Rectangle:
     ''' __init__ function that constructs'''
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         ''' The usual build for __init__ function'''
         self.width = width
