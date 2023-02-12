@@ -13,6 +13,6 @@ class Square(Rectangle):
         Rectangle.__init__(self, size, size)
         self.__size = size
 
-    '''Area function that returns area'''
+    ''' Area function that returns area'''
     def area(self):
         return self.__size ** 2
