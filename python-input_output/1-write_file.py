@@ -4,5 +4,5 @@
 
 def write_file(filename="", text=""):
     ''' Previous was read now we're in write mode'''
-    with open(filename, 'w', encoding="utf-8") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         return f.write(text)
