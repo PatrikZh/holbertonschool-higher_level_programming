@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-""" """
+""" Class Rectangle that inherits from previous class Base"""
+
+
 from models.base import Base
 
 
 class Rectangle(Base):
+    ''' Constructor method that takes all arguments and validates'''
     def __init__(self, width, height, x=0, y=0, id=None):
         Base.__init__(self, id)
         self.__width = width
