@@ -68,10 +68,11 @@ class Rectangle(Base):
 
     def display(self):
         ''' Use nested loops and print in order to design the rectangle'''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print('#', end="")
+        for h_space in range(self.__y):
             print()
+        for i in range(self.__height):
+            print(" " * self.__x, end="")
+            print('#' * self.__width)
 
     def __str__(self):
         ''' Str method that required string'''
