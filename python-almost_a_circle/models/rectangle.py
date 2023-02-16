@@ -63,11 +63,11 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        ''' Function that call area of the class'''
+        ''' Function that calls area of the class'''
         return self.__width * self.__height
 
     def display(self):
-        ''' Use nested loops and print in order to design the rectangle'''
+        ''' Use loops and print in order to design the rectangle'''
         for h_space in range(self.__y):
             print()
         for i in range(self.__height):
@@ -79,7 +79,10 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                                                        self.__y, self.__width,
                                                        self.__height)
+
     def update(self, *args):
+        ''' Loop for key-value present in object,
+        other loop stores additional elements'''
         print(self.__dict__)
         ls = []
         for i in self.__dict__.keys():
