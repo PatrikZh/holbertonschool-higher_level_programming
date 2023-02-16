@@ -83,7 +83,6 @@ class Rectangle(Base):
     def update(self, *args):
         ''' Loop for key-value present in object,
         other loop stores additional elements'''
-        print(self.__dict__)
         ls = []
         for i in self.__dict__.keys():
             ls.append(i)
