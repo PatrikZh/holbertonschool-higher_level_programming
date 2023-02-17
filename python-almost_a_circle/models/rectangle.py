@@ -80,7 +80,7 @@ class Rectangle(Base):
                                                        self.__y, self.__width,
                                                        self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         ''' Loop for key-value present in object,
         other loop stores additional elements'''
         ls = []
@@ -88,3 +88,8 @@ class Rectangle(Base):
             ls.append(i)
         for j in range(len(args)):
             self.__dict__[ls[j]] = args[j]
+        if args is not None:
+            return True
+        else:
+            for key, value in kwargs.items():
+                ls[key] = kwargs[key]
