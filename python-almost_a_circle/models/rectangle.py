@@ -83,13 +83,11 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         ''' Loop for key-value present in object,
         other loop stores additional elements'''
-        ls = []
-        for i in self.__dict__.keys():
-            ls.append(i)
-        for j in range(len(args)):
-            self.__dict__[ls[j]] = args[j]
-        if args is not None:
-            return True
+        attribute_list = ["id", "x", "y", "width", "height"]
+        if args and len(args) != 0:
+            for idx in range(len(attribute_list)):
+                setattr(self, attribute_list[idx], args[idx])
         else:
             for key, value in kwargs.items():
-                ls[key] = kwargs[key]
+                if hasattr(self, key):
+                    setattr(self, key, value)
