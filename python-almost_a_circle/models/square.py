@@ -23,3 +23,15 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(
                 self.id, self.x, self.y, self.width
         )
+
+    def update(self, *args, **kwargs):
+        '''Update method that keeps track of args and kwargs'''
+        attribute_list = ["id", "size", "x", "y"]
+        if args:
+            for idx, element in enumerate(args):
+                if idx < len(attribute_list):
+                    setattr(self, attribute_list[idx], args[idx])
+        elif kwargs:
+            for key, value in kwargs.items():
+                if key in attribute_list:
+                    setattr(self, key, value)
