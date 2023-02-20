@@ -20,5 +20,4 @@ class Base:
         ''' JSON string representation of list_dictionaries .dumps() func'''
         if list_dictionaries is None:
             return "[]"
-        else:
-            json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
