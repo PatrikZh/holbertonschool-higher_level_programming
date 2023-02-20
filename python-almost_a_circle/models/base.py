@@ -41,5 +41,5 @@ class Base:
         if json_string is None:
             return empty_list
         else:
-            return json_string
+            return json.loads(json_string)
 
