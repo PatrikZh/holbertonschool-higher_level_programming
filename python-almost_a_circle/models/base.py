@@ -35,6 +35,7 @@ class Base:
         with open(filename, 'w') as f:
             f.write(cls.to_json_string(empty_list))
 
+    @staticmethod
     def from_json_string(json_string):
         ''' json_string is a string representing a list of dictionaries'''
         empty_list = []
@@ -42,3 +43,15 @@ class Base:
             return empty_list
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        ''' Method that returns an instance with all attributes already set'''
+        if cls.__name__ == 'Rectangle':
+            dummy = cls(1, 1)
+        elif cls.__name__ == 'Square':
+            dummy = cls(1)
+        else:
+            return None
+        dummy.update(**dictionary)
+        return dummy
