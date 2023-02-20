@@ -42,4 +42,3 @@ class Base:
             return empty_list
         else:
             return json.loads(json_string)
-
