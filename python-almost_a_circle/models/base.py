@@ -36,7 +36,7 @@ class Base:
             f.write(cls.to_json_string(empty_list))
 
     def from_json_string(json_string):
-        ''' '''
+        ''' json_string is a string representing a list of dictionaries'''
         empty_list = []
         if json_string is None:
             return empty_list
