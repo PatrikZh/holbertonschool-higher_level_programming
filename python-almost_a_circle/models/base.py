@@ -5,6 +5,7 @@
 import json
 import os
 
+
 class Base:
     ''' Init function that has two conditions, if id exists or not'''
     __nb_objects = 0
