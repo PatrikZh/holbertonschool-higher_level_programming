@@ -3,7 +3,7 @@
 
 
 import json
-
+import os
 
 class Base:
     ''' Init function that has two conditions, if id exists or not'''
@@ -55,3 +55,19 @@ class Base:
             return None
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        ''' Method that returns a list of instances'''
+        filename = cls.__name__ + ".json"
+        if os.path.exists(filename):
+            with open(filename, 'r') as f:
+                json_string = f.read()
+                list_of_dicts = cls.from_json_string(json_string)
+                list_of_instances = []
+                for d in list_of_dicts:
+                    instance = cls.create(**d)
+                    list_of_instances.append(instance)
+                return list_of_instances
+        else:
+            return []
