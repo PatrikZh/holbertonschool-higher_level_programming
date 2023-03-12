@@ -1,2 +1,2 @@
--- List all the rows from the database hbtn_0c_0
-SELECT * FROM hbtn_0c_0
+-- List all the rows of first_table from the database hbtn_0c_0
+SELECT * FROM first_table;
