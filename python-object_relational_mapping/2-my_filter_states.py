@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that takes an argument and returns name where matches the argument"""
+""" Script that takes argument and returns name where matches the argument"""
 import MySQLdb
 import sys
 
@@ -16,9 +16,8 @@ if __name__ == "__main__":
             user=mysql_user,
             passwd=mysql_password,
             db=db_name)
-    
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE name LIKE '{}%' ORDER BY id ASC".format(search_term)
+    query = "SELECT * FROM states WHERE name LIKE '%{}%' ORDER BY id ASC".format(search_term)
     cursor.execute(query)
     result = cursor.fetchall()
     for el in result:
