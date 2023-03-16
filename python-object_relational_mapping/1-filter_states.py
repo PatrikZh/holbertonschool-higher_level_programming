@@ -17,7 +17,7 @@ if __name__ == "__main__":
             db=db_name)
 
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id"
+    query = "SELECT * FROM states WHERE name LIKE 'N%' AND name = "New York" ORDER BY states.id"
     cursor.execute(query)
     result = cursor.fetchall()
     for el in result:
