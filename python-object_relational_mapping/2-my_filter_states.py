@@ -17,7 +17,8 @@ if __name__ == "__main__":
             passwd=mysql_password,
             db=db_name)
     cursor = db.cursor()
-    query = f"SELECT * FROM states WHERE BINARY name LIKE '%{a}%' ORDER BY id"
+    query = "SELECT * FROM states WHERE BINARY name\
+            LIKE '%{}%' ORDER BY id".format(a)
     cursor.execute(query)
     result = cursor.fetchall()
     for el in result:
