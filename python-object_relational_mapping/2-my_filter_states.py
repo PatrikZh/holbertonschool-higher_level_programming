@@ -8,7 +8,7 @@ if __name__ == "__main__":
     mysql_user = sys.argv[1]
     mysql_password = sys.argv[2]
     db_name = sys.argv[3]
-    search_term = sys.argv[4]
+    a = sys.argv[4]
 
     db = MySQLdb.connect(
             host="localhost",
@@ -17,7 +17,7 @@ if __name__ == "__main__":
             passwd=mysql_password,
             db=db_name)
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE name LIKE '%{}%' ORDER BY id ASC".format(search_term)
+    query = f"SELECT * FROM states WHERE BINARY name LIKE '%{a}%' ORDER BY id"
     cursor.execute(query)
     result = cursor.fetchall()
     for el in result:
