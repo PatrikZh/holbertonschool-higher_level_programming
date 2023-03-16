@@ -8,8 +8,9 @@ if __name__ == "__main__":
     mysql_user = sys.argv[1]
     mysql_password = sys.argv[2]
     db_name = sys.argv[3]
+    search_term = sys.argv[4]
 
-    db.MySQLdb.connect(
+    db = MySQLdb.connect(
             host="localhost",
             port=3306,
             user=mysql_user,
