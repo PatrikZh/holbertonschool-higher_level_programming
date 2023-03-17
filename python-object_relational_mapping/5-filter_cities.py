@@ -19,7 +19,7 @@ if __name__ == "__main__":
     query = "SELECT cities.* FROM cities \
     JOIN states ON cities.state_id = states.id \
     WHERE states.name=%s ORDER BY cities.id"
-    cursor.execute(query)
+    cursor.execute(query, state_name,))
     result = cursor.fetchall()
     for el in result:
         print(el)
