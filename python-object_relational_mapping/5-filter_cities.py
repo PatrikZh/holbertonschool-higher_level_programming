@@ -22,6 +22,8 @@ if __name__ == "__main__":
     WHERE states.name=%s ORDER BY cities.id"
     cursor.execute(query, (state_name,))
     result = cursor.fetchall()
-    for el in result:
-        print(el)
+    cities = []
+    for row in result:
+        cities.append(row[2])
+    print(", ".join(cities))
     db.close()
