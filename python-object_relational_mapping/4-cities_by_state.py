@@ -16,7 +16,8 @@ if __name__ == "__main__":
             passwd=mysql_password,
             db=db_name)
     cursor = db.cursor()
-    query = "SELECT * FROM cities ORDER BY cities.id"
+    query = "SELECT cities.id, cities.name, states.name FROM cities \
+    JOIN states ON cities.state_id = states.id ORDER BY cities.id"
     cursor.execute(query)
     result = cursor.fetchall()
     for el in result:
