@@ -18,9 +18,8 @@ if __name__ == "__main__":
             db=db_name,
             charset="utf8")
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE BINARY name\
-            LIKE '%{}%' ORDER BY id".format(a)
-    cursor.execute(query)
+    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id"
+    cursor.execute(query, ('%' + a + '%',))
     result = cursor.fetchall()
     for el in result:
         print(el)
