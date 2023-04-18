@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that takes argument and returns name where matches the argument"""
+""" Making the script safe from SQL injections"""
 import MySQLdb
 import sys
 
