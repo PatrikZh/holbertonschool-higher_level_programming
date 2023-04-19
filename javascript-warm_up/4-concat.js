@@ -5,6 +5,6 @@ if (args.length === 2) {
 	console.log(args[0] + ' is ' + args[1]);
 } else if (args.length === 1) {
 	console.log(args[0] + ' is undefined');
-} else if (args.lenght === 0){
+} else if (args){
 	console.log('undefined is undefined');
 }
