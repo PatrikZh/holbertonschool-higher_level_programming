@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 
 if (isNaN(args)) {
-	console.log('Missing number of occurrences');
+  console.log('Missing number of occurrences');
 } else {
-	for (let i = 0; i < args; i++) {
-		console.log('C is fun');
-	}
+  for (let i = 0; i < args; i++) {
+    console.log('C is fun');
+  }
 }
