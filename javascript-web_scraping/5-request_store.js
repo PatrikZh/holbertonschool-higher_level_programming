@@ -10,6 +10,5 @@ request(url, (error, response, body) => {
   if (error) throw error;
   fs.writeFile(filePath, body, 'utf-8', (err) => {
     if (err) throw err;
-	  return;
   });
 });
